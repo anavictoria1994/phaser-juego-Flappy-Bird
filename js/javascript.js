@@ -2,7 +2,7 @@ class Escena extends Phaser.Scene {
 
     preload() {
         resize();
-
+        window.addEventListener('resize', resize, false);
     }
 
     create() {
@@ -34,5 +34,4 @@ const config = {
 };
 
 new Phaser.Game(config);
-window.addEventListener('resize', resize, false);
 
