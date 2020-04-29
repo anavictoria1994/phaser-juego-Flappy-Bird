@@ -1,14 +1,12 @@
 class Escena extends Phaser.Scene {
 
     preload() {
-        this.load.baseURL = '/curso/phaser/ex/acierta-imagen/';
         resize();
-        window.addEventListener('resize', resize);
-        this.load.image('fondo', 'img/fondo.jpg');
+
     }
 
     create() {
-        this.add.sprite(480, 320, 'fondo');
+
     }
 }
 
